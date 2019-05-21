@@ -6,11 +6,11 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 08:51:07 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/20 09:32:55 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/05/21 10:27:50 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
+int		ft_strcmp(const char *s1, const char *s2)
 {
 	while (*s1 && *s1 == *s2)
 	{
