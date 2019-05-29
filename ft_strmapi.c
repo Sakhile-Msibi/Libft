@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 11:32:46 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/29 11:53:26 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/05/29 14:48:44 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,9 @@ size_t	ft_strlen(const char *str)
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int i;
-	char *fresh;
+	int		i;
+	char	*fresh;
+
 	if (!(fresh = (char *)malloc(sizeof(char) * ft_strlen(s) + 1)))
 		return (NULL);
 	i = 0;
