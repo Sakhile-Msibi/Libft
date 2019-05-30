@@ -6,15 +6,15 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 12:38:49 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/30 12:41:40 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/05/30 12:43:43 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void    ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    write(fd, &c, 1);
+	write(fd, &c, 1);
 }
 
 void	ft_putnbr_fd(int n, int fd)
