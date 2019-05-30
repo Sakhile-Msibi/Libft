@@ -1,21 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/20 08:51:07 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/29 14:06:04 by smsibi           ###   ########.fr       */
+/*   Created: 2019/05/29 14:15:54 by smsibi            #+#    #+#             */
+/*   Updated: 2019/05/29 14:17:49 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(const char *s1, const char *s2)
+#include <string.h>
+
+int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	while (*s1 && *s1 == *s2)
+	int i;
+
+	while (n && *s1 && *s1 == *s2)
 	{
 		s1++;
 		s2++;
+		n--;
 	}
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	if (n == 0)
+		return (1);
+	i = *s1 - *s2;
+	if (i == 0)
+		return (1);
+	else
+		return (0);
 }

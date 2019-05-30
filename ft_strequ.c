@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/20 08:51:07 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/29 14:06:04 by smsibi           ###   ########.fr       */
+/*   Created: 2019/05/29 12:49:14 by smsibi            #+#    #+#             */
+/*   Updated: 2019/05/29 13:18:58 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(const char *s1, const char *s2)
+int		ft_strequ(char const *s1, char const *s2)
 {
+	int i;
+
 	while (*s1 && *s1 == *s2)
 	{
 		s1++;
 		s2++;
 	}
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	i = *s1 - *s2;
+	if (i == 0)
+		return (1);
+	else
+		return (0);
 }
