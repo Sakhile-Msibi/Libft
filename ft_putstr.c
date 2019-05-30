@@ -6,13 +6,13 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 09:14:25 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/27 09:21:47 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/05/30 11:12:24 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putstr(const char *s)
+void	ft_putstr(char const *s)
 {
 	int i;
 
