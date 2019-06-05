@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 08:27:36 by smsibi            #+#    #+#             */
-/*   Updated: 2019/06/05 12:47:35 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/05 14:58:03 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 char	*ft_strnew(size_t size)
 {
-	char			*s1;
-	unsigned char	*s2;
+	char *s1;
+	unsigned char *s2;
 
 	if (!(s1 = (char *)malloc(sizeof(char) * (size + 1))))
 		return (NULL);
