@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 15:37:18 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/21 16:10:30 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/05 11:52:31 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s != c && *s != '\0')
+	while (*s != (char)c && *s != '\0')
 		s++;
-	if (*s == c)
+	if (*s == (char)c)
 		return (char *)s;
 	else
 		return (NULL);
