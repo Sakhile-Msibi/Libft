@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 08:58:51 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/30 09:14:34 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/05 12:09:45 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlen(const char *str)
 	return (i);
 }
 
-char	*ft_strjoin(char const *s1,char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		i;
 	char	*fresh;
