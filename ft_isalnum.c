@@ -6,11 +6,11 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 13:10:37 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/24 13:11:11 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/06 12:07:00 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isalpha(int c)
+int		ft_isalnum(int c)
 {
 	char			*c1;
 	unsigned char	c2;
