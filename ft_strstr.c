@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 11:01:36 by smsibi            #+#    #+#             */
-/*   Updated: 2019/06/05 08:01:04 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/06 12:19:46 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,21 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
+size_t	ft_strlen(const char *str)
+{
+	size_t i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
+
 char	*ft_strstr(const char *s1, const char *s2)
 {
 	size_t n;
 
-	n = strlen(s2);
+	n = ft_strlen(s2);
 	while (*s1)
 	{
 		if (!ft_memcmp(s1, s2, n))
