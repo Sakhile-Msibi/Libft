@@ -6,14 +6,14 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 11:05:38 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/31 11:07:06 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/06 13:13:38 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <string.h>
 
-static int	ft_word_count(char const *s, char c)
+static int	ft_wordc(char const *s, char c)
 {
 	int nbrword;
 
@@ -38,7 +38,7 @@ static int	ft_word_count(char const *s, char c)
 	return (nbrword);
 }
 
-static int	ft_word_len(char const *s, char c)
+static int	ft_wordl(char const *s, char c)
 {
 	int j;
 
@@ -55,29 +55,29 @@ static int	ft_word_len(char const *s, char c)
 
 char		**ft_strsplit(char const *s, char c)
 {
-	int i;
-	int j;
-	char **fresh;
+	int		i;
+	int		j;
+	char	**f;
 
 	i = 0;
 	j = 0;
-	if (!s || (!(fresh = (char **)malloc(sizeof(char) * (ft_word_count(s, c) + 1)))))
+	if (!s || (!(f = (char **)malloc(sizeof(char) * (ft_wordc(s, c) + 1)))))
 		return (NULL);
 	while (*s)
 	{
 		while (*s == c && *s)
-				s++;
+			s++;
 		if (*s != c && *s)
 		{
-			if (!(fresh[j] = (char *)malloc(sizeof(char) * (ft_word_len(s, c) + 1))))
+			if (!(f[j] = (char *)malloc(sizeof(char) * (ft_wordl(s, c) + 1))))
 				return (NULL);
 			while (*s && *s != c)
-				fresh[j][i++] = (char)*s++;
-			fresh[j][i] = '\0';
+				f[j][i++] = (char)*s++;
+			f[j][i] = '\0';
 			j++;
 			i = 0;
 		}
 	}
-	fresh[j] = NULL;
-	return (fresh);
+	f[j] = NULL;
+	return (f);
 }
