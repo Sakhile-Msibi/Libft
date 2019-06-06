@@ -29,7 +29,7 @@ OBJS = ft_bzero.o ft_isalpha.o ft_isalnum.o ft_isascii.o \
 	  ft_strncmp.o ft_strncpy.o ft_strrchr.o \
 	  ft_strstr.o ft_tolower.o ft_toupper.o \
 	  ft_putchar.o ft_putstr.o ft_putnbr.o ft_itoa.o \
-	  ft_memalloc.o ft_memdel.o ft_strnew.c ft_strdel.o \
+	  ft_memalloc.o ft_memdel.o ft_strnew.o ft_strdel.o \
 	  ft_strclr.o  ft_striter.o ft_striteri.o ft_strmap.o \
 	  ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o \
 	  ft_strjoin.o ft_strtrim.o ft_strsplit.o ft_putendl.o \
