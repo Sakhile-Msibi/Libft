@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 07:03:31 by smsibi            #+#    #+#             */
-/*   Updated: 2019/06/05 11:38:48 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/06 09:40:04 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (*s1 == c)
+		if (*s1 == (unsigned char)c)
 			return (s1);
 		else
 			s1++;
