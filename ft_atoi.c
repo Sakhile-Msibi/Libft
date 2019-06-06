@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:11:18 by smsibi            #+#    #+#             */
-/*   Updated: 2019/06/06 12:30:00 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/06 15:46:24 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int		ft_atoi(const char *str)
 	{
 		if (str[i] >= '0' && str[i] <= '9')
 			a = (a * 10) + (str[i] - 48);
+		else
+			return (a * sign);
 		i++;
 	}
 	return (a * sign);
