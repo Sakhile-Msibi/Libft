@@ -6,21 +6,11 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 07:28:22 by smsibi            #+#    #+#             */
-/*   Updated: 2019/06/05 09:42:50 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/11 07:31:23 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-size_t	ft_strlen(const char *str)
-{
-	size_t i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
+#include "libft.h"
 
 size_t	ft_strlcat(char *restrict d, const char *restrict s, size_t size)
 {
