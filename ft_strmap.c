@@ -6,22 +6,11 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 09:24:37 by smsibi            #+#    #+#             */
-/*   Updated: 2019/06/05 12:07:39 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/11 07:26:55 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
-
-size_t	ft_strlen(const char *str)
-{
-	size_t i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
+#include "libft.h"
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
