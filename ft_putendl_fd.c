@@ -6,16 +6,11 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 09:37:32 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/31 09:40:39 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/11 07:38:20 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
+#include "libft.h"
 
 void	ft_putendl_fd(char const *s, int fd)
 {
