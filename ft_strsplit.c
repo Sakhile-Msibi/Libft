@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:34:05 by smsibi            #+#    #+#             */
-/*   Updated: 2019/06/07 16:37:43 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/12 08:42:17 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ char			**ft_strsplit(const char *s, char c)
 	i = 0;
 	j = 0;
 	w = ft_wordc(s, c);
-	if (!(f = (char **)malloc(sizeof(f) * (ft_wordc(s, c) + 2))))
+	if (!s || (!(f = (char **)malloc(sizeof(f) * (ft_wordc(s, c) + 2)))))
 		return (NULL);
 	while (s[i] == c && s[i])
 		i++;
