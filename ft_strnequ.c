@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 14:15:54 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/29 14:17:49 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/12 09:24:46 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	int i;
 
+	if (!s1 || !s2)
+		return (0);
 	while (n && *s1 && *s1 == *s2)
 	{
 		s1++;
