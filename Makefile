@@ -23,7 +23,7 @@ SRCS = ft_bzero.c ft_isalpha.c ft_isalnum.c ft_isascii.c \
 
 OBJS = ft_bzero.o ft_isalpha.o ft_isalnum.o ft_isascii.o \
 	  ft_isdigit.o ft_isprint.o ft_memcpy.o ft_memchr.o \
-	  ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o \
+	  ft_memcmp.o ft_memccpy.o ft_memmove.o ft_memset.o \
 	  ft_strcat.o ft_strchr.o ft_strcmp.o ft_strcpy.o \
 	  ft_strdup.o ft_strlcat.o ft_strlen.o ft_strncat.o \
 	  ft_strncmp.o ft_strncpy.o ft_strrchr.o ft_atoi.o \
