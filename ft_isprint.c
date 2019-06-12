@@ -6,16 +6,11 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 09:12:22 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/24 13:56:43 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/12 07:54:12 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isprint(int c)
 {
-	unsigned char c1;
-
-	c1 = (unsigned char)c;
-	if (c1 >= 32 && c <= 126)
-		return (1);
-	return (0);
+	return (c >= 32 && c <= 126);
 }
