@@ -6,11 +6,11 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 09:27:57 by smsibi            #+#    #+#             */
-/*   Updated: 2019/05/24 14:03:25 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/06/24 07:55:09 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
