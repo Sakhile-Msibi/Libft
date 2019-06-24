@@ -49,6 +49,6 @@ clean:
 	rm -f $(OBJS)
 
 fclean:
-	rm -f $(NAME)
+	rm -f $(NAME) $(OBJS)
 
 re: fclean all
