@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 07:42:11 by smsibi            #+#    #+#             */
-/*   Updated: 2019/08/05 08:59:07 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/08/05 09:09:16 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ int		ft_atoi(const char *str);
 char	*ft_strstr(const char *haystick, const char *needle);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+void	ft_strupper(char *s);
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
