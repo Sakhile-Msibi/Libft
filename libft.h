@@ -6,15 +6,17 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 07:42:11 by smsibi            #+#    #+#             */
-/*   Updated: 2019/08/05 09:09:16 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/08/05 09:47:13 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFF_SIZE 42
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <fcntl.h>
 
 void	ft_bzero(void *s, size_t n);
 int		ft_isalpha(int c);
@@ -72,5 +74,6 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+int		get_next_line(const int fd, char **line);
 
 #endif
