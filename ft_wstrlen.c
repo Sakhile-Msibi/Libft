@@ -6,18 +6,18 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/05 07:33:01 by smsibi            #+#    #+#             */
-/*   Updated: 2019/08/05 07:34:45 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/08/05 08:26:40 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t  ft_wstrlen(wchar_t *wstr)
+size_t	ft_wstrlen(wchar_t *wstr)
 {
-    size_t i;
+	size_t i;
 
-    i = 0;
-    while (wstr[i] != '\0')
-        i++;
-    return (i);
+	i = 0;
+	while (wstr[i] != '\0')
+		i++;
+	return (i);
 }
