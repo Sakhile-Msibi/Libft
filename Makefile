@@ -19,7 +19,7 @@ SRCS = ft_bzero.c ft_isalpha.c ft_isalnum.c ft_isascii.c \
 	  ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c \
 	  ft_strjoin.c ft_strjoin_mod.c ft_strtrim.c ft_strsplit.c ft_putendl.c \
 	  ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
-	  ft_putnbr_fd.c
+	  ft_putnbr_fd.c get_next_line.c
 
 OBJS = ft_bzero.o ft_isalpha.o ft_isalnum.o ft_isascii.o \
 	  ft_isdigit.o ft_isprint.o ft_memcpy.o ft_memchr.o \
@@ -34,7 +34,7 @@ OBJS = ft_bzero.o ft_isalpha.o ft_isalnum.o ft_isascii.o \
 	  ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o \
 	  ft_strjoin.o ft_strjoin_mod.o ft_strtrim.o ft_strsplit.o ft_putendl.o \
 	  ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o \
-	  ft_putnbr_fd.o
+	  ft_putnbr_fd.o get_next_line.o
 
 	  
 
