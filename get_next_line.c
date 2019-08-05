@@ -6,12 +6,11 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/01 12:38:51 by smsibi            #+#    #+#             */
-/*   Updated: 2019/08/05 09:40:25 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/08/05 09:45:32 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
-#include "libft/libft.h"
+#include "libft.h"
 
 int	get_next_line(const int fd, char **line)
 {
