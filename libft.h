@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 07:42:11 by smsibi            #+#    #+#             */
-/*   Updated: 2019/06/07 15:47:52 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/08/05 08:59:07 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ char	*ft_strcpy(char *dst, const char *src);
 char	*ft_strdup(const char *s1);
 size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dsize);
 size_t	ft_strlen(const char *s);
+size_t	ft_wstrlen(wchar_t *wstr);
 char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strncpy(char *dst, const char *src, size_t len);
@@ -48,6 +49,7 @@ void	ft_putchar(char c);
 void	ft_putstr(char const *s);
 void	ft_putnbr(int n);
 char	*ft_itoa(int n);
+char	*ft_itoa_base(int value, int base);
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
@@ -62,6 +64,7 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin_mod(char *s1, char **s2);
 char	**ft_strsplit(char const *s, char c);
 void	ft_putendl(char const *s);
 void	ft_putchar_fd(char c, int fd);
