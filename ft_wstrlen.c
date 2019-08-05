@@ -6,11 +6,11 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/05 07:33:01 by smsibi            #+#    #+#             */
-/*   Updated: 2019/08/05 08:26:40 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/08/05 08:59:15 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_wstrlen(wchar_t *wstr)
 {
