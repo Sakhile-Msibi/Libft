@@ -6,11 +6,11 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/16 11:47:20 by smsibi            #+#    #+#             */
-/*   Updated: 2019/08/16 11:48:50 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/08/16 12:24:06 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-long	ft_atoi(const char *s)
+long	ft_atoi_l(const char *s)
 {
 	long	r;
 	long	sign;
