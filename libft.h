@@ -6,7 +6,7 @@
 /*   By: smsibi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 07:42:11 by smsibi            #+#    #+#             */
-/*   Updated: 2019/08/05 09:47:13 by smsibi           ###   ########.fr       */
+/*   Updated: 2019/08/16 12:23:43 by smsibi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strncpy(char *dst, const char *src, size_t len);
 char	*ft_strrchr(const char *s, int c);
 int		ft_atoi(const char *str);
+long    ft_atoi_l(const char *s)
 char	*ft_strstr(const char *haystick, const char *needle);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
